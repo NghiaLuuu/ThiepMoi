@@ -1,83 +1,67 @@
 # Thiệp Mời Sinh Nhật - Lưu Trung Nghĩa
 
-## 🎉 Cách sử dụng
+## 🎉 Link thiệp mời đã deploy
 
-Deploy file `index.html` lên hosting (Vercel, Netlify, GitHub Pages, v.v.)
+**Live URL:** https://thiep-moi-delta.vercel.app/
 
-## 📋 Danh sách URL cho từng khách mời
+## 📋 Danh sách link cho từng khách mời
 
-Sau khi deploy, thêm parameter `?guest=` vào URL:
+### 1. Hậu Môn
+```
+https://thiep-moi-delta.vercel.app/?guest=hau-mon
+```
 
-### URLs cho từng khách:
+### 2. Thanh Bình - Anh Thư
+```
+https://thiep-moi-delta.vercel.app/?guest=thanh-binh-anh-thu
+```
 
-1. **Hậu Môn**
-   ```
-   https://your-domain.com/?guest=hau-mon
-   ```
+### 3. Võ Thành - Mai Uy
+```
+https://thiep-moi-delta.vercel.app/?guest=vo-thanh-mai-uy
+```
 
-2. **Thanh Bình - Anh Thư**
-   ```
-   https://your-domain.com/?guest=thanh-binh-anh-thu
-   ```
+### 4. Phương Duyên
+```
+https://thiep-moi-delta.vercel.app/?guest=phuong-duyen
+```
 
-3. **Võ Thành - Mai Uy**
-   ```
-   https://your-domain.com/?guest=vo-thanh-mai-uy
-   ```
+### 5. Chu Lai
+```
+https://thiep-moi-delta.vercel.app/?guest=chu-lai
+```
 
-4. **Phương Duyên**
-   ```
-   https://your-domain.com/?guest=phuong-duyen
-   ```
+### 6. Nguyên Vũ
+```
+https://thiep-moi-delta.vercel.app/?guest=nguyen-vu
+```
 
-5. **Chu Lai**
-   ```
-   https://your-domain.com/?guest=chu-lai
-   ```
+### 7. Cả Nhóm
+```
+https://thiep-moi-delta.vercel.app/?guest=ca-nhom
+```
 
-6. **Nguyên Vũ**
-   ```
-   https://your-domain.com/?guest=nguyen-vu
-   ```
+---
 
-## 🚀 Cách deploy nhanh
+## 🚀 Thông tin deploy
 
-### Option 1: Vercel (Khuyên dùng)
-1. Tạo tài khoản tại https://vercel.com
-2. Kéo thả folder `ThiepMoi` vào Vercel
-3. Deploy tự động, nhận link
-
-### Option 2: Netlify
-1. Tạo tài khoản tại https://netlify.com
-2. Kéo thả folder vào Netlify Drop
-3. Nhận link ngay lập tức
-
-### Option 3: GitHub Pages
-1. Tạo repository mới trên GitHub
-2. Upload file `index.html`
-3. Enable GitHub Pages trong Settings
-4. Truy cập: `https://username.github.io/repo-name/`
+- **Platform:** Vercel
+- **Repository:** https://github.com/NghiaLuuu/ThiepMoi
+- **Deploy URL:** https://thiep-moi-delta.vercel.app/
 
 ## 📱 Test local
 
-Mở file với server local (không dùng file://)
+Mở file với server local:
 
 ```bash
-# Python
 python3 -m http.server 8000
-
-# Node.js
-npx serve
-
-# PHP
-php -S localhost:8000
 ```
 
 Sau đó truy cập: `http://localhost:8000/?guest=hau-mon`
 
 ## ✏️ Thêm khách mới
 
-Mở `index.html`, tìm phần `guestMap` và thêm:
+Mở `index.html`, tìm phần `guestMap` trong JavaScript và thêm:
 
 ```javascript
 const guestMap = {
@@ -86,4 +70,4 @@ const guestMap = {
 };
 ```
 
-URL sẽ là: `?guest=ten-khach`
+URL sẽ là: `https://thiep-moi-delta.vercel.app/?guest=ten-khach`
