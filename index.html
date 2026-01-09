@@ -460,14 +460,16 @@
         /* Responsive */
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 80px 10px 120px 10px;
                 overflow-x: hidden;
                 overflow-y: auto;
+                min-height: 100vh;
+                align-items: flex-start;
             }
 
             .container {
-                margin-top: 50px;
-                margin-bottom: 100px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
 
             .envelope { 
@@ -478,15 +480,15 @@
             }
             
             .envelope.open .card {
-                transform: translate(-50%, -50%) translateY(-80px);
+                transform: translate(-50%, -50%) translateY(-60px);
             }
             
             .card { 
                 width: 92vw;
                 max-width: 360px;
                 height: auto;
-                min-height: 580px;
-                max-height: 80vh;
+                min-height: 520px;
+                max-height: 75vh;
                 overflow-y: auto;
             }
             
