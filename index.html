@@ -460,8 +460,14 @@
         /* Responsive */
         @media (max-width: 768px) {
             body {
-                padding: 20px;
+                padding: 10px;
                 overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .container {
+                margin-top: 50px;
+                margin-bottom: 100px;
             }
 
             .envelope { 
@@ -471,12 +477,16 @@
                 aspect-ratio: 1.5;
             }
             
+            .envelope.open .card {
+                transform: translate(-50%, -50%) translateY(-80px);
+            }
+            
             .card { 
                 width: 92vw;
                 max-width: 360px;
                 height: auto;
                 min-height: 580px;
-                max-height: 85vh;
+                max-height: 80vh;
                 overflow-y: auto;
             }
             
