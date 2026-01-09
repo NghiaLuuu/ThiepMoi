@@ -559,18 +559,15 @@
             const urlParams = new URLSearchParams(window.location.search);
             const guest = urlParams.get('guest');
             
-            // Danh sách tên khách được mapping
-            const guestMap = {
-                'hau-mon': 'Hậu Môn',
-                'thanh-binh-anh-thu': 'Thanh Bình - Anh Thư',
-                'vo-thanh-mai-uy': 'Võ Thành - Mai Uy',
-                'phuong-duyen': 'Phương Duyên',
-                'chu-lai': 'Chu Lai',
-                'nguyen-vu': 'Nguyên Vũ',
-                'ca-nhom': 'Cả Nhóm'
-            };
+            if (!guest) {
+                return 'Quý khách';
+            }
             
-            return guest && guestMap[guest] ? guestMap[guest] : 'Quý khách';
+            // Chuyển đổi từ dạng "vo-thanh-mai-uy" thành "Võ Thành Mai Uy"
+            return guest
+                .split('-')  // Tách theo dấu gạch ngang
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())  // Viết hoa chữ cái đầu
+                .join(' ');  // Nối lại bằng khoảng trắng
         }
 
         // Set tên khách khi trang load
