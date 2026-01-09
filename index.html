@@ -459,12 +459,171 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .envelope { width: 340px; height: 226px; }
-            .card { width: 350px; height: 580px; }
-            .card-content { padding: 35px 30px; }
-            .card-host { font-size: 34px; }
-            .guest-name { font-size: 28px; }
-            .detail-value { font-size: 18px; }
+            body {
+                padding: 20px;
+                overflow-x: hidden;
+            }
+
+            .envelope { 
+                width: 90vw;
+                max-width: 340px;
+                height: auto;
+                aspect-ratio: 1.5;
+            }
+            
+            .card { 
+                width: 92vw;
+                max-width: 360px;
+                height: auto;
+                min-height: 580px;
+                max-height: 85vh;
+                overflow-y: auto;
+            }
+            
+            .card-content { 
+                padding: 30px 25px;
+            }
+            
+            .card-title {
+                font-size: 13px;
+                letter-spacing: 4px;
+            }
+            
+            .card-host { 
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+            
+            .card-subtitle {
+                font-size: 13px;
+            }
+            
+            .guest-name { 
+                font-size: 26px;
+                margin: 10px 0 20px 0;
+            }
+            
+            .invitation-text {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+            
+            .event-details {
+                padding: 20px;
+            }
+            
+            .detail-item {
+                margin: 12px 0;
+                gap: 10px;
+            }
+            
+            .detail-icon {
+                font-size: 18px;
+            }
+            
+            .detail-label {
+                font-size: 10px;
+            }
+            
+            .detail-value { 
+                font-size: 17px;
+            }
+            
+            .map-link {
+                padding: 8px 16px;
+                font-size: 12px;
+                margin-top: 12px;
+            }
+            
+            .closing-text {
+                font-size: 12px;
+            }
+            
+            .close-btn {
+                bottom: -60px;
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+            
+            .click-hint {
+                bottom: -55px;
+                font-size: 13px;
+            }
+            
+            .stamp {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .corner-decoration {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .corner-decoration.top-left,
+            .corner-decoration.top-right { top: 15px; }
+            .corner-decoration.bottom-left,
+            .corner-decoration.bottom-right { bottom: 15px; }
+            .corner-decoration.top-left,
+            .corner-decoration.bottom-left { left: 15px; }
+            .corner-decoration.top-right,
+            .corner-decoration.bottom-right { right: 15px; }
+        }
+
+        @media (max-width: 480px) {
+            .card { 
+                width: 95vw;
+                max-width: 340px;
+                padding: 0;
+            }
+            
+            .card-content {
+                padding: 25px 20px;
+            }
+            
+            .card-host { 
+                font-size: 28px;
+            }
+            
+            .guest-name { 
+                font-size: 24px;
+            }
+            
+            .corner-decoration {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-height: 700px) and (max-width: 768px) {
+            .card {
+                max-height: 75vh;
+            }
+            
+            .card-content {
+                padding: 20px 20px;
+            }
+            
+            .card-host {
+                font-size: 26px;
+                margin: 10px 0;
+            }
+            
+            .guest-name {
+                font-size: 22px;
+                margin: 8px 0 15px 0;
+            }
+            
+            .event-details {
+                padding: 15px;
+            }
+            
+            .detail-item {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
