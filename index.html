@@ -207,7 +207,7 @@
         }
 
         .card-content {
-            padding: 50px 45px;
+            padding: 50px 45px 30px 45px;
             color: var(--color-text-white);
             text-align: center;
             position: relative;
@@ -269,6 +269,7 @@
             animation: goldShimmer 4s ease-in-out infinite;
             filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
             line-height: 1.2;
+            white-space: nowrap;
         }
 
         @keyframes goldShimmer {
@@ -397,6 +398,7 @@
 
         .card-footer {
             margin-top: 20px;
+            flex-shrink: 0;
         }
 
         .closing-text {
